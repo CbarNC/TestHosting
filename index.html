@@ -6,13 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <!--[if lt IE 9]>
     <![endif]-->
-    <script type="text/javascript">
-        const primaryButton = document.querySelectorAll(".btn btn-primary");
+     <script type="text/javascript">
+        const primaryButton = document.querySelector(".btn.btn-primary"); // Use querySelector to select the button
 
-        primaryButton.forEach(button => {
-            primaryButton.addEventListener("click", () => {
-                alert("Message Successfully Submitted");
-            });
+        primaryButton.addEventListener("click", () => {
+            alert("Message Successfully Submitted");
         });
     </script>
 </head>
